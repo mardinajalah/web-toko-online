@@ -45,7 +45,7 @@ export const signUp = async (userData: {
       .then(() => {
         callback(true);
       })
-      .catch((error) => {
+      .catch(() => {
         callback(false);
       });
   }
