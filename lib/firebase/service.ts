@@ -27,7 +27,7 @@ export const signUp = async (userData: {
   phone: string;
   password: string;
   role?: string;
-}, callback: Function) => {
+}, callback: (status: boolean) => void) => {
   const q = query(collection(firestore, "users"), where("email", "==", userData.email));
 
   const snapshot = await getDocs(q);
