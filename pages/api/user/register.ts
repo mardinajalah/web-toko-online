@@ -1,4 +1,4 @@
-import type, { NextApiRequest, NextApiResponse } from "next";
+import { NextApiRequest, NextApiResponse } from "next";
 import { signUp } from "@/lib/firebase/service";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
